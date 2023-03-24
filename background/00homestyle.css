@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Viga&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     user-select: none;
+ }
+
+ body {
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: url(bg.jpg);
+     background-attachment: fixed;
+     background-size: cover;
+     touch-action: pan-x pan-y;
+ }
+
+ body:after {
+     content: "";
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0, 0, 0, 0.9);
+     backdrop-filter: blur(1px);
+     z-index: -1;
+ }
+
+ .app {
+     position: relative;
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 20px;
+     overflow: hidden;
+     /* padding-top: 45px; */
+ }
+
+ .app .nav {
+     position: fixed;
+     z-index: 99999999;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 100%;
+     height: 40px;
+     font-family: 'Viga', sans-serif;
+     background-color: rgba(0, 0, 0, 0.75);
+     box-shadow: 0 1px 5px rgba(17, 25, 40, 0.75), 0 1px 10px rgba(17, 25, 40, 0.75);
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     padding: 10px;
+ }
+
+ .app .logo {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     left: -5px;
+     width: 50px;
+     height: 35px;
+     object-fit: cover;
+     border-radius: 50%;
+ }
+
+ .app .akses {
+     position: relative;
+     padding: 5px;
+     margin: 0 5px;
+     color: #fff;
+     font-family: 'Viga', sans-serif;
+ }
+
+ h1 {
+     display: block;
+     font-size: 2em;
+     margin-block-start: 0.67em;
+     margin-block-end: 0.67em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+     font-weight: bold;
+ }
+
+ .app h1 {
+     font-family: 'Viga', sans-serif;
+     color: rgba(255, 255, 255, 0.4);
+     line-height: 1px;
+ }
+
+ .app .description {
+     margin-top: 1px;
+     font-family: 'Viga', sans-serif;
+     color: rgba(255, 255, 255, 0.4);
+ }
+
+ .app .informasi {
+
+     margin: 2px;
+     font-family: 'Viga', sans-serif;
+     color: rgba(255, 255, 255, 0.4);
+ }
+
+ p {
+     display: block;
+     margin-block-start: 1em;
+     margin-block-end: 1em;
+     margin-inline-start: 0px;
+     margin-inline-end: 0px;
+ }
+
+ .app label {
+     width: 100%;
+     text-align: left;
+     font-family: 'Viga', sans-serif;
+     color: rgba(255, 255, 255, 0.7);
+     margin-top: 1px;
+ }
+
+ label {
+     cursor: default;
+ }
+
+ .app .kotak {
+     position: relative;
+     padding: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     background-color: rgba(45, 34, 68, 0.5);
+     border-radius: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.125);
+     margin-top: 1px;
+ }
+
+ .kotak .inner {
+     position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .inner.mt-5 {
+     margin-top: 5px;
+ }
+
+ .app .input {
+     position: relative;
+     margin-top: 5px;
+     font-family: 'Viga', sans-serif;
+     background: rgba(255, 255, 255, 0.4);
+     color: rgba(255, 255, 255, 0.4);
+     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+     border-radius: 10px;
+     border: 1px solid rgba(255, 255, 255, 0.18);
+     width: 300px;
+     height: 40px;
+     font-size: 15px;
+     padding:15px;
+ }
+
+ input {
+     writing-mode: horizontal-tb !important;
+     font-style: ;
+     font-variant-ligatures: ;
+     font-variant-caps: ;
+     font-variant-numeric: ;
+     font-variant-east-asian: ;
+     font-variant-alternates: ;
+     font-weight: ;
+     font-stretch: ;
+     font-size: ;
+     font-family: ;
+     font-optical-sizing: ;
+     font-kerning: ;
+     font-feature-settings: ;
+     font-variation-settings: ;
+     text-rendering: auto;
+     color: black;
+     letter-spacing: normal;
+     word-spacing: normal;
+     line-height: normal;
+     text-transform: none;
+     text-indent: 0px;
+     text-shadow: none;
+     display: inline-block;
+     text-align: start;
+     appearance: auto;
+     -webkit-rtl-ordering: logical;
+     cursor: text;
+     background-color: #eaeaea;
+     margin: 0em;
+     padding: 1px 2px;
+     border-width: 2px;
+     border-style: inset;
+     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+     border-image: initial;
+ }
+
+ form {
+     display: block;
+     margin-top: 0em;
+ }
+
+ .app form {
+     position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ .app .submit {
+     position: relative;
+     margin-top: 20px;
+     font-family: 'Viga', sans-serif;
+     background: #eaeaea;
+     color: black;
+     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+     border-radius: 5px;
+     border: 1px solid rgba(255, 255, 255, 0.18);
+     font-size: 16px;
+     padding: 5px 20px;
+ }
+
+ .footer {
+     width: 100%;
+     position: fixed;
+     bottom: 2px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-family: "Viga", sans-serif;
+     color: rgba(255, 255, 255, 0.4);
+     font-size: 13px;
+     background-color: rgba(0, 0, 0, 0.75);
+     box-shadow: 0 1px 5px rgba(17, 25, 40, 0.75), 0 1px 10px rgba(17, 25, 40, 0.75);
+     padding: 5px;
+ }
+
+ .app .dua {
+     position: relative;
+     width: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+     gap: 10px;
+     margin-top: 20px;
+ }
+
+ @media (max-width: 550px) .app .inner,
+ .inner .input,
+ .app .details,
+ .bungkus label,
+ .app .bungkus,
+ .app .labels,
+ .app .conz {
+     width: 100%;
+ }
